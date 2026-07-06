@@ -29,7 +29,7 @@ The JS challenge page a real browser hits before being trusted:
 
 Same behavior confirmed from the command line — a full header set including the signed cookie is classified as human, while a bare `curl` User-Agent gets flagged and served fake prices:
 
-![Human via PowerShell](docs/human_powershell.png)
+![Human via PowerShell](docs/human_response_powershell.png)
 
 Server-side request log for the session above:
 
