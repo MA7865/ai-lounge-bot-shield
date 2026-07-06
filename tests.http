@@ -1,0 +1,15 @@
+### Generic request (likely bot due to no cookie)
+GET http://127.0.0.1:8000/api/courses
+User-Agent: curl/7.88.1
+
+### Simulate python-requests UA
+GET http://127.0.0.1:8000/api/courses
+User-Agent: python-requests/2.31
+
+### Simulate Googlebot (allowed by default)
+GET http://127.0.0.1:8000/api/courses
+User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+### Debug
+GET http://127.0.0.1:8000/_debug/why
+User-Agent: curl/7.88.1
